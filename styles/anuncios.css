@@ -1,0 +1,52 @@
+
+:root{
+    --main-anuncio-color: gold;
+}
+
+body{
+    background-color: lightblue;
+}
+/* Navigator */
+#nav_container{
+    background-color: grey;
+}
+nav label{
+    border: 1px solid black;
+    border-radius:10px;
+}
+nav label a {
+    color: black;
+}
+nav label:hover{
+    background-color: aqua;
+}
+nav{
+    text-align: end;
+    font-size: 30px;
+    height: 50px;
+}
+
+/* Cards */
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+}

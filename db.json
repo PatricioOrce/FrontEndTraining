@@ -1,0 +1,54 @@
+{
+  "anuncios": [
+    {
+      "id": 0,
+      "titulo": "Casa Nueva Tlantis",
+      "transaccion": "Alquiler",
+      "descripcion": "Altokeroke",
+      "precio": 9000,
+      "banios": 2,
+      "autos": 3,
+      "dormitorios": 3
+    },
+    {
+      "id": 1,
+      "titulo": "Casa mardel",
+      "transaccion": "Alquiler",
+      "descripcion": "Altokeroke",
+      "precio": 9000,
+      "banios": 2,
+      "autos": 3,
+      "dormitorios": 3
+    },
+    {
+      "id": 2,
+      "titulo": "asdasdasd",
+      "transaccion": "Venta",
+      "descripcion": "123123",
+      "precio": "123",
+      "banios": "123",
+      "autos": "123",
+      "dormitorios": "123"
+    },
+    {
+      "id": 3,
+      "titulo": "asdasdasd",
+      "transaccion": "Alquiler",
+      "descripcion": "asdasdas",
+      "precio": "123",
+      "banios": "123",
+      "autos": "123",
+      "dormitorios": "123"
+    },
+    {
+      "id": 4,
+      "titulo": "Bariloche Hotel",
+      "transaccion": "Alquiler",
+      "descripcion": "Hotelaso en bari",
+      "precio": "123123",
+      "banios": "1",
+      "autos": "1",
+      "dormitorios": "12"
+    }
+  ]
+}

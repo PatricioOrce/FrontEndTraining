@@ -1,0 +1,73 @@
+/* Establecer tamanio por default */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Titulo */
+#main_title{
+    text-align: center;
+    margin: 5rem;
+}
+
+/* Nav */
+nav{
+    background-color: #3b3b4f;
+}
+
+/* Formulario */
+#form_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    background-image: url("../imgs/playa.jpg");
+}
+form{
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.7rem;
+    background-color: aliceblue;
+}
+fieldset label input{
+    display: block;
+    min-width: 100%;
+}
+fieldset label{
+    display: block;
+    margin-top: 10px;
+    padding-left: 1em;
+}
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+    max-width: 95%;
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+.textbox{
+    height: 25px;
+}
+
+/* Buttons */
+#btn_delete{
+    width: 100%;
+    background-color: red;
+}
+
+/* Filtros */
+#filters label{
+    display: inline;
+    margin: 2%;
+}
+
+/* Tabla */
+
+.oddTableField:hover{
+    background-color: grey;
+}
+
+.pairTableField:hover{
+    background-color: grey;
+}

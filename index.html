@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="./scripts/DinamicTable.js" type="module"></script>
+    <script src="./scripts/app.js" type="module"></script>
+    <title>Bienes Raices - Inicio</title>
+</head>
+<body>
+    <div id="nav_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Bienes Raices</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" disabled>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="./anuncios.html">Anuncios</a>
+
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    <h1 id="main_title">Formulario de Alta</h1>
+    <div id="form_container">
+        <form id="formulario" method="post" >
+            <fieldset>
+                <input type="text" name="txtId" hidden>
+                <label for="title_textbox">Title<input id="title_textbox" name="txtTitle" type="text" class="textbox" required></label>
+                <label for="title_textbox">Transaccion</label>
+                <label for="venta_radio">Venta<input id="venta_radio" name="venta_alquiler" type="radio" value="Venta" checked></label>
+                <label for="alquiler_radio">Alquiler<input id="alquiler_radio" name="venta_alquiler" type="radio" value="Alquiler"></label>
+                <label for="descripcion_textbox">Descripcion<input id="descripcion_textbox" name="txtDescription" type="text" class="textbox" required></label>
+                <label for="precio_textbox">Precio<input id="title_textbox" name="txtPrecio" type="number" class="textbox" required></label>
+                <label for="banios_textbox">Cantidad de Banios<input id="banios_textbox" name="txtBanios" type="number" class="textbox" required></label>
+                <label for="autos_textbox">Cantidad de Autos<input id="autos_textbox" name="txtAutos" type="number" class="textbox" required></label>
+                <label for="dormitorios_textbox">Cantidad de Dormitorios<input id="dormitorios_textbox" name="txtDormitorios" type="number" class="textbox" required></label>
+                <label for=""><input name="guardar" type="submit"></label>
+            </fieldset>
+        </form>
+        <label for=""><button id="btn_delete" >Eliminar</button></label>
+
+    </div>
+    <div id="filters">
+      <div>
+        <label for="">Filtrar por:
+          <select name="filter_options" id="select_filter">
+            <option value="Todos">Todos</option>
+            <option value="Alquiler">Alquiler</option>
+            <option value="Venta">Venta</option>
+          </select>
+        </label>
+        <label for="">Promedio de precios:<input id="promedio" type="text" disabled></label>
+      </div>
+      <div>
+
+      </div>
+      <label for=""><input type="checkbox" checked>Titulo</label>
+      <label for=""><input type="checkbox" checked>Transaccion</label>
+      <label for=""><input type="checkbox" checked>Descripcion</label>
+      <label for=""><input type="checkbox" checked>Precio</label>
+      <label for=""><input type="checkbox" checked>Banios</label>
+      <label for=""><input type="checkbox" checked>Autos</label>
+      <label for=""><input type="checkbox" checked>Dormitorios</label>
+    </div>
+    <div id="table_container">
+       
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
